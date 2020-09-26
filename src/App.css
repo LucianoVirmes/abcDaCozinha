@@ -1,0 +1,15 @@
+  .site-layout-sub-header-background {
+    background: #fff;
+  }
+  
+  .site-layout-background {
+    background: #fff;
+  }
+
+  .card {
+      padding: 8px;
+      text-align: center;
+  }
+  .card .ant-card-cover img {
+    max-height: 28.5vh;
+  }
