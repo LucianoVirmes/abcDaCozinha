@@ -4,8 +4,11 @@ import dinner from './dinner.jpeg';
 import breakfast from './breakfast.jpeg';
 import lunch from './lunch.jpeg';
 import snack from './snack.jpg';
+import {useHistory} from 'react-router-dom';
+
 
 export default function MealList() {
+    const history = useHistory();
     return (
         <div className="card-content">
             <Row>
@@ -13,6 +16,7 @@ export default function MealList() {
                     <Card
                         size="small"
                         hoverable
+                        onClick={() => history.push("./recipe")}
                         cover={<img alt="example" src={dinner} />}
                     >
                         Jantar

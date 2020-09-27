@@ -1,6 +1,8 @@
 import React, { FunctionComponent } from 'react';
+import './style.css';
 import { Layout } from 'antd';
 const { Header, Content, Footer } = Layout;
+
 
 const AbcLayout: FunctionComponent = ({ children }) => {
     return (
