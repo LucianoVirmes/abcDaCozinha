@@ -8,7 +8,7 @@ const AbcLayout: FunctionComponent = ({ children }) => {
     return (
         <>
             <Layout style={{minHeight: "100vh"}}>
-                <Header className="site-layout-sub-header-background" style={{ padding: 0, height: "7vh" }} />
+                <Header style={{height: "5.5vh"}} className="site-layout-sub-header-background" />
                 <Content style={{ margin: '0 16px 0' }}>
                     <div className="site-layout-background" style={{ padding: 10, height: "calc: (100% - 70px)" }}>
                         {children}
