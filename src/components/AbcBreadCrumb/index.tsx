@@ -8,20 +8,20 @@ interface Props {
     routes: Route[]
 }
 
-const AbcBreadCrumb = (props: Props) => {
+const AbcBreadCrumb = ({ routes }: Props) => {
 
     function itemRender(route: Route, params: any, routes: Route[], paths: string[]) {
         const last = routes.indexOf(route) === routes.length - 1;
         return last ? (
             <span>{route.breadcrumbName}</span>
         ) : (
-                <Link to={paths.join('/')}>{route.breadcrumbName}</Link>
+                <Link to={route.path}>{route.breadcrumbName}</Link>
             );
     }
 
     return (
         <div className="abc-breadcrumb">
-            <Breadcrumb itemRender={itemRender} routes={props.routes} />
+            <Breadcrumb itemRender={itemRender} routes={routes} />
         </div>
     )
 }
