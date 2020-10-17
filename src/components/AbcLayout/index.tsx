@@ -7,14 +7,14 @@ const { Header, Content, Footer } = Layout;
 const AbcLayout: FunctionComponent = ({ children }) => {
     return (
         <>
-            <Layout>
-                <Header className="site-layout-sub-header-background" style={{ padding: 0 }} />
-                <Content style={{ margin: '13x 16px 0' }}>
-                    <div className="site-layout-background" style={{ padding: 10 }}>
+            <Layout style={{minHeight: "100vh"}}>
+                <Header className="site-layout-sub-header-background" style={{ padding: 0, height: "7vh" }} />
+                <Content style={{ margin: '0 16px 0' }}>
+                    <div className="site-layout-background" style={{ padding: 10, height: "calc: (100% - 70px)" }}>
                         {children}
                     </div>
                 </Content>
-                <Footer style={{ textAlign: 'center' }}>Abc da cozinha ©2020</Footer>
+                <Footer style={{ textAlign: 'center', paddingTop: 30}}>Abc da cozinha ©2020</Footer>
             </Layout>
         </>
     )

@@ -12,7 +12,7 @@ const RecipeList = (props: ReceipeListProps) => {
     const history = useHistory();
 
     const listData = [];
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 30; i++) {
         listData.push({
             href: 'https://ant.design',
             title: `Bife a milanesa ${i}`,

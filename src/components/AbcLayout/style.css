@@ -4,6 +4,7 @@
   
   .site-layout-background {
     background: #fff;
+    min-height: calc(100vh  - 15vh);
   }
 
   .card {
