@@ -1,4 +1,4 @@
-import { Form, Input, message } from 'antd';
+import { Form, Input } from 'antd';
 import React, { useState } from 'react';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
@@ -6,7 +6,7 @@ import EditorToolbar, { formats, modules } from '../../components/EditorToolbar'
 import { InboxOutlined } from '@ant-design/icons';
 import Dragger from 'antd/lib/upload/Dragger';
 import { UploadChangeParam } from 'antd/lib/upload';
-import { RcCustomRequestOptions, RcFile, UploadFile } from 'antd/lib/upload/interface';
+import { RcCustomRequestOptions, UploadFile } from 'antd/lib/upload/interface';
 
 
 interface Props {
